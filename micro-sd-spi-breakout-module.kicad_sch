@@ -2294,7 +2294,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "100nF-Cap:C0603_CC0603JRX7R9BB104_C91183"
 			(at 145.7452 81.915 0)
 			(hide yes)
 			(show_name no)
@@ -2345,6 +2345,7 @@
 	(symbol
 		(lib_id "Connector:Conn_01x07_Pin")
 		(at 91.44 103.505 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2352,10 +2353,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7303e96f-db15-4363-8e3c-b1528de09a96")
 		(property "Reference" "J1"
-			(at 92.075 91.44 0)
+			(at 92.075 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2365,7 +2365,7 @@
 			)
 		)
 		(property "Value" "Conn_01x07_Pin"
-			(at 92.075 93.98 0)
+			(at 92.075 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2374,7 +2374,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal"
 			(at 91.44 103.505 0)
 			(hide yes)
 			(show_name no)
@@ -2548,7 +2548,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "10K-Res:R0603_FRC0603F1001TS_C2907002"
 			(at 141.732 103.505 90)
 			(hide yes)
 			(show_name no)
@@ -2785,7 +2785,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Sd-Card-Holder:TF-SMD_TF-PUSH_TF_PUSH_C393941"
 			(at 90.805 27.305 0)
 			(hide yes)
 			(show_name no)
@@ -3056,7 +3056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "10uF-Cap:C0603_CL10A106KP8NNNC_C19702"
 			(at 134.9502 81.915 0)
 			(hide yes)
 			(show_name no)
@@ -3216,7 +3216,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "10K-Res:R0603_FRC0603F1001TS_C2907002"
 			(at 148.717 103.505 90)
 			(hide yes)
 			(show_name no)
