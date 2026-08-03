@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "TF-SMD_TF-PUSH_TF_PUSH_C393941") (type "KiCad") (uri "${KIPRJMOD}/ext-libs/TF-SMD_TF-PUSH_TF_PUSH_C393941/TF-SMD_TF-PUSH_TF_PUSH_C393941.kicad_sym") (options "") (descr ""))
+)
