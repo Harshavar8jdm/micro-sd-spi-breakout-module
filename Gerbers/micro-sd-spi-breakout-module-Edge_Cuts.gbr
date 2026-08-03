@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.4-1.fc44*%
+%TF.CreationDate,2026-08-03T21:13:17+05:30*%
+%TF.ProjectId,micro-sd-spi-breakout-module,6d696372-6f2d-4736-942d-7370692d6272,V1.0*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.4-1.fc44) date 2026-08-03 21:13:17*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X125000000Y-75000000D02*
+X153000000Y-75000000D01*
+X153000000Y-97000000D01*
+X125000000Y-97000000D01*
+X125000000Y-75000000D01*
+M02*
