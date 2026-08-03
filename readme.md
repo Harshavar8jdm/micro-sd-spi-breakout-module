@@ -24,3 +24,38 @@ Designed specifically for 3.3V native logic ecosystems (STM32, ESP32, RP2040, SA
 * **Standard 2.54mm Header:** 1x7 pin header footprint for breadboard prototyping or jumper wiring.
 
 ---
+
+## Schematic & Layout
+
+### Schematic
+![Schematic](Images/schematic.png)
+
+### PCB Layout
+![PCB Layout](Images/pcb_layout.png)
+
+---
+
+## Bill of Materials (BOM)
+
+| Reference | Quantity | Value / Part | Footprint / Package | Description |
+| :--- | :---: | :--- | :--- | :--- |
+| **U1** | 1 | `TF_SMD_TF-PUSH` | MicroSD Push-Push Connector | Surface Mount TF/MicroSD Socket |
+| **J1** | 1 | `Conn_01x07_Pin` | PinHeader 1x07, P2.54mm, Vertical | 0.1 inch Pitch Male Pin Header |
+| **C1** | 1 | 10 uF | Ceramic Cap, 0805 | Bulk Power Decoupling |
+| **C2** | 1 | 100 nF | Ceramic Cap, 0603 | High-Frequency Decoupling |
+| **R1, R2** | 2 | 10k Ohm | Resistor, 0603 | Signal Pull-Up Resistors |
+
+---
+
+## Software Integration & Bring-Up Guide
+
+### 1. SPI Clock Speed Stages
+When writing software/drivers for SD cards via SPI:
+1. **Initialization Phase (100 kHz - 400 kHz):** The SD Card specification requires initial setup (`CMD0`, `CMD8`, `ACMD41`) to be executed at a slow clock speed (<400 kHz) while the card initializes its internal state machine into SPI mode.
+2. **Operational Phase (10 MHz - 25 MHz):** Once initialized into SPI mode, increase your MCU's SPI peripheral clock frequency up to **20-25 MHz** for high-throughput block read/write transfers.
+
+### 2. Microcontroller Compatibility Notice
+* **Native 3.3V MCUs (STM32, ESP32, RP2040, SAMD):** Connect directly to header pins.
+* **5V MCUs (e.g., Classic Arduino Uno R3):** Require external active level shifters (like 74LVC125A) on `SCK`, `MOSI`, and `CS` lines to prevent over-voltage damage to the SD card.
+
+---
